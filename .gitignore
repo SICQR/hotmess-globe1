@@ -44,10 +44,8 @@ venv/
 env/
 ENV/
 
-# Package Manager Files
-package-lock.json
-yarn.lock
-Pipfile.lock
+# Package Manager Files (keep lock files for reproducible builds)
+# package-lock.json, yarn.lock, and Pipfile.lock should generally be committed
 
 # Environment and Configuration
 .env
@@ -64,8 +62,9 @@ coverage/
 htmlcov/
 .pytest_cache/
 .nyc_output/
-*.test
-*.spec
+test-results/
+*.test.log
+*.spec.log
 
 # Documentation Build
 _build/
